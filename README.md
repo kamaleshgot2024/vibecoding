@@ -1,3 +1,23 @@
+# Prompt
+I want to create a Python CLI tool called "KubeGPT" to diagnose issues in Kubernetes pods.
+
+The goal is to:
+
+Get pod logs, descriptions, and events using kubectl.
+Analyze common issues like CrashLoopBackOff, OOMKilled, image pull errors.
+Use AI (like Copilot or GPT-4) to summarize the issue and recommend a fix.
+Output actionable kubectl commands and YAML suggestions.
+Start by scaffolding a Python CLI project with the following structure:
+
+Use the typer library for CLI interaction.
+Create a kubegpt/ package folder with modules:
+diagnoser.py to run and parse kubectl commands
+analyzer.py to generate summaries using AI (placeholder for now)
+recommender.py to suggest fixes based on known patterns
+Add a cli.py as the entrypoint.
+Generate basic code and comments in each file, and a README to explain the project.
+
+
 # 🚀 KubeGPT - Revolutionary AI-Powered Kubernetes Diagnostics
 
 🤖 **KubeGPT** is the world's first AI-native Kubernetes diagnostic CLI tool that revolutionizes troubleshooting with intelligent analysis, pattern recognition, and automated fix generation. It combines the power of Large Language Models with deep Kubernetes expertise to transform reactive debugging into proactive, intelligent operations.
