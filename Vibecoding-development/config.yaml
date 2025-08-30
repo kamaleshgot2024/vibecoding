@@ -1,0 +1,19 @@
+kubernetes:
+  config_path: ~/.kube/config
+  default_namespace: default
+  timeout: 30
+
+openai:
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-3.5-turbo
+  max_tokens: 1000
+  temperature: 0.3
+
+output:
+  format: table  # table, json, yaml
+  color: true
+  max_log_lines: 100
+
+logging:
+  level: INFO
+  file: kubegpt.log
